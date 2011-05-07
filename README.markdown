@@ -29,16 +29,16 @@ This an experimental prototype and there are lots of things that I'd like to fix
 4. Feature detection for nicer transitions if browser doesn't support 3D transforms
 5. Skin video player
 6. Add loaders to images and videos
-7. - Add touch events -
+7. --Add touch events--
 8. Add resize events
 9. Add History API / #! deep linking. Possibly.
 
 ## Change log
 
-0.1.1 - May 6, 2011
+**0.1.1 - May 6, 2011**
 
 Added touch events
 
-0.1.0 - May 5, 2011
+**0.1.0 - May 5, 2011**
 
 Initial Commit
