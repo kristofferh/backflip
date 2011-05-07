@@ -1,11 +1,24 @@
 <!DOCTYPE html> 
 <html lang="en" class="no-js">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv=X-UA-Compatible content="IE=Edge;chrome=1">
+		<meta charset="utf-8" />
+		<meta http-equiv=X-UA-Compatible content="IE=Edge;chrome=1" />
 		<title>Backflip</title>
-		<link rel="stylesheet" href="_ui/css/colors.css">
-		<link rel="stylesheet" href="_ui/css/all.css">
+		<link rel="shortcut icon" href="_ui/img/icons/favicon.ico"> 
+		<link rel="apple-touch-icon" sizes="114x114" href="_ui/img/icons/favicon-114.png" />
+		<link rel="apple-touch-icon" href="_ui/img/icons/favicon-57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="_ui/img/icons/favicon-72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="_ui/img/icons/favicon-114.png" />
+		<link rel="stylesheet" href="_ui/css/colors.css" />
+		<link rel="stylesheet" href="_ui/css/all.css" />
+		<meta name="description" content="Backflip is slideshow module built on jQuery that uses a whole bunch of CSS3 transitions, and 3D transforms, in browsers that support them, to display a grid of thumbnails and a 'back' view. Get it? Backflip.">
+		<meta property="og:title" content="Backflip"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://backflip.k-create.com"/>
+		<meta property="og:image" content="http://backflip.k-create.com/_ui/img/icons/favicon-256.png"/>
+		<meta property="og:site_name" content="Backflip"/>
+		<meta property="fb:admins" content="553353606"/>
+		<meta property="og:description" content="Backflip is slideshow module built on jQuery that uses a whole bunch of CSS3 transitions, and 3D transforms, in browsers that support them, to display a grid of thumbnails and a 'back' view. Get it? Backflip." />
 	</head>
 	<body>
 		<div id="backflip"></div>
@@ -36,6 +49,7 @@
 				
 					<ul class="browser-list">
 						<li>Safari 5+</li>
+						<li>MobileSafari</li>
 						<li>Google Chrome (flip effect, but not 3d)</li>
 						<li>Firefox4 (no flip effect)</li>
 						<li>Firefox3.6 (no flip effect or transitions)</li>
@@ -53,31 +67,45 @@
 						<li>Feature detection for nicer transitions if browser doesn't support 3D transforms</li>
 						<li>Skin video player</li>
 						<li>Add loaders to images and videos</li>
-						<li>Add touch events</li>
+						<li><del>Add touch events</del> Done. See changelog.</li>
 						<li>Add resize events</li>
 						<li>Add History API / #! deep linking</li>
 					</ol>
+				</div>
+				
+				<h2 id="changelog">Change log</h2>
+                <h3>0.1.1 - May 6, 2011</h3>
+                <p>Added touch events</p>
+                <h3>0.1.0 - May 5, 2011</h3>
+                <p>Initial Commit</p>
+				<div class="hr"></div>
+				<div class="credits">
+					<p>By <a href="http://k-create.com">Kris Hedstrom</a> | View the code on <a href="https://github.com/kristofferh/backflip">Github</a></p>
+					<div class="social">
+						<div id="fb-root"></div>
+						<fb:like href="http://backflip.k-create.com" send="true" layout="button_count" width="200" show_faces="false" font="lucida grande"></fb:like>
+					</div>
 				</div>
 			</section>
 			
 			
 		</div>
-		
+		<a href="https://github.com/kristofferh/backflip"><img style="position: absolute; top: 0; right: 0; border: 0;z-index: 1000000" src="https://d3nwyuy0nl342s.cloudfront.net/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
 		<script>!window.jQuery && document.write(unescape('%3Cscript src="_ui/js/lib/jquery-1.5.2.min.js"%3E%3C/script%3E'));</script>
 		
 		<script src="_ui/js/main.js"></script>
-		
-		<!-- <script type="text/javascript">
+		<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+		<script type="text/javascript">
 		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-332687-1']);
+		  _gaq.push(['_setAccount', 'UA-332687-12']);
 		  _gaq.push(['_trackPageview']);
 		  (function() {
 		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-		</script> -->
+		</script>
 	</body>
 </html>
