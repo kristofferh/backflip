@@ -1,0 +1,353 @@
+{
+	"slides": [
+		{
+			"credits": "By Stuart Woodman",
+			"source": ["data/full/norway-1970.jpg"],
+			"thumbnail": "data/thumbs/norway-1970.jpg",
+			"title": "Norway in 1970",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/stuartwoodman/3092566762/"
+		},
+		{
+			"credits": "By Kris",
+			"source": ["data/full/tiredeyes.jpg"],
+			"thumbnail": "data/thumbs/tiredeyes.jpg",
+			"title": "I've been starting at this for too long...",
+			"type": "image"
+		},
+		{
+			"credits": "By Kris",
+			"source": [
+				{
+					"src": "data/full/ghosts.webm",
+					"type":  "video/webm; codecs='vp8, vorbis'"
+				},
+				{
+					"src": "data/full/ghosts.theora.ogv",
+					"type":  "video/ogg; codecs='theora, vorbis'"
+				},
+				{
+					"src": "data/full/ghosts.mp4",
+					"type":  "video/mp4; codecs='avc1.42E01E, mp4a.40.2'"
+				}
+			],
+			"thumbnail": "data/thumbs/ghosts.jpg",
+			"title": "Ghosts of Ballard",
+			"type": "video"
+		},
+		{
+			"credits": "By David Schwen",
+			"source": ["data/full/foil-dinosaur.jpg"],
+			"thumbnail": "data/thumbs/foil-dinosaur.jpg",
+			"title": "Prehistoric Leftovers",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/dschwen/5673341784/in/photostream/"
+		},
+		{
+			"credits": "By Kristine May",
+			"source": ["data/full/moon-sail.jpg"],
+			"thumbnail": "data/thumbs/moon-sail.jpg",
+			"title": "Moon Sail",
+			"type": "image"
+		},
+		{
+			"credits": "By Research + Development",
+			"source": ["data/full/nobel.jpg"],
+			"thumbnail": "data/thumbs/nobel.jpg",
+			"title": "Jonas Nobel",
+			"type": "image"
+		},
+		{
+			"credits": "By September Industry",
+			"source": ["data/full/barbican.jpg"],
+			"thumbnail": "data/thumbs/barbican.jpg",
+			"title": "Barbican",
+			"type": "image"
+		},
+		{
+			"credits": "By Kevin Folk",
+			"source": ["data/full/catcher.jpg"],
+			"thumbnail": "data/thumbs/catcher.jpg",
+			"title": "Catch-22 Cover Detail",
+			"type": "image"
+		},
+		{
+			"credits": "By Brandon Shigeta",
+			"source": ["data/full/broken-skateboard.jpg"],
+			"thumbnail": "data/thumbs/broken-skateboard.jpg",
+			"title": "Broken Skateboard",
+			"type": "image"
+		},
+		{
+			"credits": "By Alberto Nogueira",
+			"source": ["data/full/sweet-house.jpg"],
+			"thumbnail": "data/thumbs/sweet-house.jpg",
+			"title": "Rural life",
+			"type": "image"
+		},
+		{
+			"credits": "By Stuart Woodman",
+			"source": ["data/full/norway-1970.jpg"],
+			"thumbnail": "data/thumbs/norway-1970.jpg",
+			"title": "Norway in 1970",
+			"type": "image"
+		},
+		{
+			"credits": "By els vdpalen",
+			"source": ["data/full/whoa.jpg"],
+			"thumbnail": "data/thumbs/whoa.jpg",
+			"title": "Hawk Eye",
+			"type": "image"
+		},
+		{
+			"credits": "By Zack Newcomb",
+			"source": ["data/full/fishing-boats.jpg"],
+			"thumbnail": "data/thumbs/fishing-boats.jpg",
+			"title": "Fisherman's Terminal",
+			"type": "image"
+		},
+		{
+			"credits": "By Thomas Kieselbach",
+			"source": ["data/full/almost-finland.jpg"],
+			"thumbnail": "data/thumbs/almost-finland.jpg",
+			"title": "Almost Finland",
+			"type": "image"
+		},
+		{
+			"credits": "By Jonathan Fleming",
+			"source": ["data/full/kyoto.jpg"],
+			"thumbnail": "data/thumbs/kyoto.jpg",
+			"title": "Goodbye, Kyoto",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/jfleming701/4485519644/in/photostream/"
+		},
+		{
+			"credits": "By Kris",
+			"source": ["data/full/golden-gardens.jpg"],
+			"thumbnail": "data/thumbs/golden-gardens.jpg",
+			"title": "Golden Gardens. Ballard. Seattle, WA",
+			"type": "image"
+		},
+		{
+			"credits": "By antitude",
+			"source": ["data/full/glimpses.jpg"],
+			"thumbnail": "data/thumbs/glimpses.jpg",
+			"title": "Glimpses",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/antitude/5680013994/in/photostream/"
+		},
+		{
+			"credits": "By Alberto Nogueira",
+			"source": ["data/full/sweet-house.jpg"],
+			"thumbnail": "data/thumbs/sweet-house.jpg",
+			"title": "Rural life",
+			"type": "image"
+		},
+		{
+			"credits": "By APC",
+			"source": ["data/full/apc.jpg"],
+			"thumbnail": "data/thumbs/apc.jpg",
+			"title": "APC",
+			"type": "image"
+		},
+		{
+			"credits": "Kurt Vile",
+			"source": ["data/full/kurt-vile.jpg"],
+			"thumbnail": "data/thumbs/kurt-vile.jpg",
+			"title": "Currently Listening To",
+			"type": "image"
+		},
+		{
+			"credits": "By Zack Newcomb",
+			"source": ["data/full/fishing-boats.jpg"],
+			"thumbnail": "data/thumbs/fishing-boats.jpg",
+			"title": "Fisherman's Terminal",
+			"type": "image"
+		},
+		{
+			"credits": "By Brandon Shigeta",
+			"source": ["data/full/broken-skateboard.jpg"],
+			"thumbnail": "data/thumbs/broken-skateboard.jpg",
+			"title": "Broken Skateboard",
+			"type": "image"
+		},
+		{
+			"credits": "By els vdpalen",
+			"source": ["data/full/whoa.jpg"],
+			"thumbnail": "data/thumbs/whoa.jpg",
+			"title": "Hawk Eye",
+			"type": "image"
+		},
+		{
+			"credits": "By Kevin Folk",
+			"source": ["data/full/catcher.jpg"],
+			"thumbnail": "data/thumbs/catcher.jpg",
+			"title": "Catch-22 Cover Detail",
+			"type": "image"
+		},
+		{
+			"credits": "By arny johanns",
+			"source": ["data/full/car.jpg"],
+			"thumbnail": "data/thumbs/car.jpg",
+			"title": "Where have you been?",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/arny_johanns/954518785/in/set-1355696/"
+		},
+		{
+			"credits": "By Jonathan Fleming",
+			"source": ["data/full/kyoto.jpg"],
+			"thumbnail": "data/thumbs/kyoto.jpg",
+			"title": "Goodbye, Kyoto",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/jfleming701/4485519644/in/photostream/"
+		},
+		{
+			"credits": "By Kristine May",
+			"source": ["data/full/moon-sail.jpg"],
+			"thumbnail": "data/thumbs/moon-sail.jpg",
+			"title": "Moon Sail",
+			"type": "image"
+		},
+		{
+			"credits": "By Research + Development",
+			"source": ["data/full/nobel.jpg"],
+			"thumbnail": "data/thumbs/nobel.jpg",
+			"title": "Jonas Nobel",
+			"type": "image"
+		},
+		{
+			"credits": "By Thomas Kieselbach",
+			"source": ["data/full/almost-finland.jpg"],
+			"thumbnail": "data/thumbs/almost-finland.jpg",
+			"title": "Almost Finland",
+			"type": "image"
+		},
+		{
+			"credits": "By Jonathan Fleming",
+			"source": ["data/full/kyoto.jpg"],
+			"thumbnail": "data/thumbs/kyoto.jpg",
+			"title": "Goodbye, Kyoto",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/jfleming701/4485519644/in/photostream/"
+		},
+		{
+			"credits": "By Kris",
+			"source": ["data/full/golden-gardens.jpg"],
+			"thumbnail": "data/thumbs/golden-gardens.jpg",
+			"title": "Golden Gardens. Ballard. Seattle, WA",
+			"type": "image"
+		},
+		{
+			"credits": "By September Industry",
+			"source": ["data/full/barbican.jpg"],
+			"thumbnail": "data/thumbs/barbican.jpg",
+			"title": "Barbican",
+			"type": "image"
+		},
+		{
+			"credits": "By Kevin Folk",
+			"source": ["data/full/catcher.jpg"],
+			"thumbnail": "data/thumbs/catcher.jpg",
+			"title": "Catch-22 Cover Detail",
+			"type": "image"
+		},
+		{
+			"credits": "By Brandon Shigeta",
+			"source": ["data/full/broken-skateboard.jpg"],
+			"thumbnail": "data/thumbs/broken-skateboard.jpg",
+			"title": "Broken Skateboard",
+			"type": "image"
+		},
+		{
+			"credits": "By Kris",
+			"source": [
+				{
+					"src": "data/full/ghosts.webm",
+					"type":  "video/webm; codecs='vp8, vorbis'"
+				},
+				{
+					"src": "data/full/ghosts.theora.ogv",
+					"type":  "video/ogg; codecs='theora, vorbis'"
+				},
+				{
+					"src": "data/full/ghosts.mp4",
+					"type":  "video/mp4; codecs='avc1.42E01E, mp4a.40.2'"
+				}
+			],
+			"thumbnail": "data/thumbs/ghosts.jpg",
+			"title": "Ghosts of Ballard",
+			"type": "video"
+		},
+		{
+			"credits": "By APC",
+			"source": ["data/full/apc.jpg"],
+			"thumbnail": "data/thumbs/apc.jpg",
+			"title": "APC",
+			"type": "image"
+		},
+		{
+			"credits": "By David Schwen",
+			"source": ["data/full/foil-dinosaur.jpg"],
+			"thumbnail": "data/thumbs/foil-dinosaur.jpg",
+			"title": "Prehistoric Leftovers",
+			"type": "image",
+			"url": "http://www.flickr.com/photos/dschwen/5673341784/in/photostream/"
+		},
+		{
+			"credits": "By Kristine May",
+			"source": ["data/full/moon-sail.jpg"],
+			"thumbnail": "data/thumbs/moon-sail.jpg",
+			"title": "Moon Sail",
+			"type": "image"
+		},
+		{
+			"credits": "By Research + Development",
+			"source": ["data/full/nobel.jpg"],
+			"thumbnail": "data/thumbs/nobel.jpg",
+			"title": "Jonas Nobel",
+			"type": "image"
+		},
+		{
+			"credits": "By September Industry",
+			"source": ["data/full/barbican.jpg"],
+			"thumbnail": "data/thumbs/barbican.jpg",
+			"title": "Barbican",
+			"type": "image"
+		},
+		{
+			"credits": "By Kevin Folk",
+			"source": ["data/full/catcher.jpg"],
+			"thumbnail": "data/thumbs/catcher.jpg",
+			"title": "Catch-22 Cover Detail",
+			"type": "image"
+		},
+		{
+			"credits": "By Brandon Shigeta",
+			"source": ["data/full/broken-skateboard.jpg"],
+			"thumbnail": "data/thumbs/broken-skateboard.jpg",
+			"title": "Broken Skateboard",
+			"type": "image"
+		},
+		{
+			"credits": "By Alberto Nogueira",
+			"source": ["data/full/sweet-house.jpg"],
+			"thumbnail": "data/thumbs/sweet-house.jpg",
+			"title": "Rural life",
+			"type": "image"
+		},
+		{
+			"credits": "By Kevin Folk",
+			"source": ["data/full/catcher.jpg"],
+			"thumbnail": "data/thumbs/catcher.jpg",
+			"title": "Catch-22 Cover Detail",
+			"type": "image"
+		},
+		{
+			"credits": "By Brandon Shigeta",
+			"source": ["data/full/broken-skateboard.jpg"],
+			"thumbnail": "data/thumbs/broken-skateboard.jpg",
+			"title": "Broken Skateboard",
+			"type": "image"
+		}
+	]
+}

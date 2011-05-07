@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv=X-UA-Compatible content="IE=Edge;chrome=1">
+		<title>Backflip</title>
+		<link rel="stylesheet" href="_ui/css/colors.css">
+		<link rel="stylesheet" href="_ui/css/all.css">
+	</head>
+	<body>
+		<div id="backflip"></div>
+		<div id="description">
+			<header>
+				<h1>Back<span class="cute">f</span>lip</h1>
+			</header>
+			<section>
+				<div class="intro columns">
+					<p>Backflip is slideshow module built on jQuery that uses a whole bunch of CSS3 transitions, and 3D transforms, in browsers that support them, to display a grid of thumbnails and a "back" view. Once the user selects a thumbnail the section will flip the card over and display a larger, more detailed, view of the item. Get it? Backflip. So lame... I'm sorry.</p>
+					<p>Backflip takes JSON data as its input and either constructs the entire DOM structure or uses the existing markup<sup><a href="#todos">[1]</a></sup> (if the JSON is parsed and turned into HTML by a server-side technology).</p>
+					<!-- <div class="highlight">
+	<pre><code>&lt;div id=<span class="na">"target"</span>&gt;
+	  &lt;section&gt;
+	    &lt;ul&gt;
+	      &lt;li&gt;Thumbnail&lt;/li&gt;
+	      ...
+	    &lt;/ul&gt;
+	  &lt;/section&gt;
+	&lt;/div&gt;</code>
+	</pre>
+					</div> -->
+				</div>
+				
+				<h2>Browser support (as of May 5, 2011)</h2>
+				<div class="columns">
+					<p>I built this in only a few hours so it's not production ready by any means. Having said that, Backflip should work in most browsers, although features may or may not be available, at the most basic level it should degrade peacefully. CSS transitions and 2D transforms are generally supported in most modern browsers (Firefox 4, Safari 5, Chrome, IE 9). CSS3 3D transformations (in the z-axis) is only supported by WebKit, so only Webkit browsers will get the 'flipcard' effect. Google Chrome does not support <code>-webkit-backface-visibility</code> or <code>-webkit-perspective</code> so while it gets a flip effect, because it lacks depth of view, it won't appear three dimensional. Safari 5 and MobileSafari are, currently, the only browsers that render the 3D effects.</p>
+				
+					<ul class="browser-list">
+						<li>Safari 5+</li>
+						<li>Google Chrome (flip effect, but not 3d)</li>
+						<li>Firefox4 (no flip effect)</li>
+						<li>Firefox3.6 (no flip effect or transitions)</li>
+						<li>IE9 (no flip effect, buggy)</li>
+						<li>IE8 (no flip effect, no transitions, doesn't understand nth-child so needs extra attention)</li>
+					</ul>
+				</div>
+				<h2 id="todos">To-dos</h2>
+				<div class="columns">
+					<p>This an experimental prototype and there are lots of things that I'd like to fix or add:</p>
+					<ol class="todos">
+						<li>Implement an existing structure solution</li>
+						<li>UI improvements, previous / next buttons</li>
+						<li>Re-write it in native JS for library independence</li>
+						<li>Feature detection for nicer transitions if browser doesn't support 3D transforms</li>
+						<li>Skin video player</li>
+						<li>Add loaders to images and videos</li>
+						<li>Add touch events</li>
+						<li>Add resize events</li>
+						<li>Add History API / #! deep linking</li>
+					</ol>
+				</div>
+			</section>
+			
+			
+		</div>
+		
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+		<script>!window.jQuery && document.write(unescape('%3Cscript src="_ui/js/lib/jquery-1.5.2.min.js"%3E%3C/script%3E'));</script>
+		
+		<script src="_ui/js/main.js"></script>
+		
+		<!-- <script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-332687-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script> -->
+	</body>
+</html>
