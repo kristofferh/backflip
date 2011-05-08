@@ -27,8 +27,18 @@ var Backflip = function(target, options) {
 		initialIndex: 0, // which section should be current (in focus) group
 		minSwipe: 40, // minimum amount for a swipe to count (touches) 
 		jsonPath: '_ui/json/backflip.json', // path to JSON data
-		slidesPerSection: 24
+		slidesPerSection: 24, // how many slides per section?
+		useTranslate3D: true // use CSS translate 3D, if available (boolean)
 	}, options || {});
+
+	if(this.options.useTranslate3D) {
+		var thisBody = document.body || document.documentElement,
+			thisStyle = thisBody.style;
+		// Check for feature support for transitions and translate3D
+		this.transitionEndEvent = (thisStyle.WebkitTransition !== undefined) ? "webkitTransitionEnd" : (thisStyle.OTransition !== undefined) ? "oTransitionEnd" : "transitionend";
+		this.cssTransitionsSupported = thisStyle.WebkitTransition !== undefined || thisStyle.MozTransition !== undefined || thisStyle.OTransition !== undefined || thisStyle.transition !== undefined;
+		this.has3D = ('WebKitCSSMatrix' in window && 'm11' in new WebKitCSSMatrix());
+	}
 
 	if(this.options.content === 'dynamic') {
 		for(var i = 0, l = this.target.length; i < l; i++) {
@@ -39,6 +49,7 @@ var Backflip = function(target, options) {
 					self.slideData = data;
 					// build the markup
 					self.build();
+					self.setupEvents();
 				});
 			} else {
 				// we already have the data, let's build this thingy
@@ -50,7 +61,7 @@ var Backflip = function(target, options) {
 		// @TODO: implement
 	}
 
-	this.setupEvents();
+	//this.setupEvents();
 };
 
 Backflip.prototype = {
@@ -319,7 +330,6 @@ Backflip.prototype = {
 	 */
 	loadDetails: function(index, sectionIndex) {
 		
-		
 		var data = this.slideData.slides[index],
 			i,
 			l,
@@ -381,7 +391,38 @@ Backflip.prototype = {
 			return false;
 		}
 	},
+	
+	/**
+	 * Animate the the wrapper using CSS3 3D transforms
+	 * @param offset {string}
+	 * @param time {number}
+	 * @param callback {function}
+	 */
+	translate: function(offset, time, callback) {
+		var self = this;
+		
+		this.wrapper.css({
+			'transition': 'transform ' + time + 'ms linear',
+			'-moz-transition': '-moz-transform ' + time + 'ms linear',
+			'-o-transition': '-o-transform ' + time + 'ms linear',
+			'-webkit-transition': '-webkit-transform ' + time + 'ms linear'
+		});
 
+		this.wrapper.css({
+			'transform': 'translate3d(' + offset + ', 0, 0)',
+			'-moz-transform': 'translate3d(' + offset + ', 0, 0)',
+			'-o-transform': 'translate3d(' + offset + ', 0, 0)',
+			'-webkit-transform': 'translate3d(' + offset + ', 0, 0)'
+		});
+
+		this.wrapper.bind(this.transitionEndEvent, function() {
+			self.wrapper.unbind(self.transitionEndEvent);
+			if(typeof callback === 'function') {
+				callback();
+			}
+		});
+	},
+	
 	/**
 	 * Slide the inner wrapper
 	 * @param index {number}
@@ -407,27 +448,56 @@ Backflip.prototype = {
 		
 		if(!jump) {
 			// animate
-			this.wrapper.stop().animate({left: left}, this.options.animTimeSlide, function(e) {
-				// update current class
-				el.addClass('current'); 
-				if(el.hasClass('first')) {
-					// jump to first slide so we don't have to keep cloning stuff 
-					// (only really looks okay if the animation is quick)
-					self.slideTo(1, true); 
-				} else if(el.hasClass('last')) {
-					self.slideTo(self.totalSections - 1, true);
-				}
-			});
+			if(this.has3D) {
+				this.translate(left, this.options.animTimeSlide, function() {
+					self.doneAnimating(el);
+				});
+			} else {
+				this.wrapper.stop().animate({left: left}, this.options.animTimeSlide, function(e) {
+					self.doneAnimating(el);
+				});
+			}
 		} else {
 			// jump
-			self.wrapper.stop().css({left: left});
+			if(this.has3D) {
+				this.translate(left, 0);
+			} else {
+				this.wrapper.stop().css({left: left});
+			}
 			el.addClass('current');
+		}
+	},
+	
+	doneAnimating: function(target) {
+		// update current class
+		target.addClass('current'); 
+		if(target.hasClass('first')) {
+			// jump to first slide so we don't have to keep cloning stuff 
+			// (only really looks okay if the animation is quick)
+			this.slideTo(1, true); 
+		} else if(target.hasClass('last')) {
+			this.slideTo(this.totalSections - 1, true);
 		}
 	}
 	
 };
 
+/**
+ * Plugify-ing
+ */
+(function ($) {
+	$.fn.backflip = function(options) {
+		var bf, 
+			self = this;
+		this.each(function() {
+		    bf = new Backflip(self.selector, options);
+		});
+		return bf;
+	};
+})(jQuery);
+
 jQuery(document).ready(function() {
 	$('html').removeClass('no-js');
-	var backflip = new Backflip('#backflip', {content: 'dynamic'});
+	//var backflip = new Backflip('#backflip', {content: 'dynamic'});
+	$('#backflip').backflip({content: 'dynamic'});
 });
