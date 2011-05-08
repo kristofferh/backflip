@@ -35,6 +35,10 @@ This an experimental prototype and there are lots of things that I'd like to fix
 
 ## Change log
 
+**0.2.0 - May 8, 2011**
+
+Added CSS3 translate3D (in browsers that understand it) for horizontal section animations. Plugifying - the script can be called as a plugin or using the <code>new</code> keyword.
+
 **0.1.1 - May 6, 2011**
 
 Added touch events
