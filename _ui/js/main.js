@@ -155,10 +155,15 @@ Backflip.prototype = {
 		var self = this; // scope alias
 		// Fade in the first element in the collection
 		els.first().fadeTo(self.options.animTimeFadeIn, 1);
-		setTimeout(function() {
-			// Recurse, but without the first element
-			self.animateThumbs(els.slice(1));
-		}, 10);
+		if(els.length > 0) {
+			this.timer = setTimeout(function() {
+				// Recurse but without the first element
+				self.animateThumbs(els.slice(1));
+			}, 10);
+		} else {
+			clearTimeout(this.timer);
+		}
+
 	},
 	
 	/**
