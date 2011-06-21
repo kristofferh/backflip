@@ -14,7 +14,7 @@ I built this in only a few hours so it's not production ready by any means. Havi
 * Google Chrome (flip effect, but not 3d)
 * Firefox4 (no flip effect)
 * Firefox3.6 (no flip effect or transitions)
-* IE9 (no flip effect, buggy)
+* IE9 (no flip effect, buggy. Weird in general.)
 * IE8 (no flip effect, no transitions, doesn't understand nth-child so needs extra attention)
 * IE7 (janky, don't really care about you)
 * IE6 (not even attempted to view, seriously don't care)
